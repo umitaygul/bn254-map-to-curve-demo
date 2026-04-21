@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: >-
+  This repository is a pedagogical Go re-implementation of two published
+  cryptography papers. Please cite the original papers, not this repo.
+title: bn254-map-to-curve-demo
+type: software
+abstract: >-
+  A self-contained Go demonstration of the GMMZ x-increment map-to-curve
+  construction, the El Housni–Bünz algebraic attack on it, and the
+  y-increment countermeasure, all instantiated on BN254.
+license: Apache-2.0
+keywords:
+  - elliptic-curve-cryptography
+  - bn254
+  - map-to-curve
+  - bls-signatures
+  - zero-knowledge
+  - gnark
+references:
+  - type: conference-paper
+    title: >-
+      Constraint-Friendly Map-to-Elliptic-Curve-Group Relations and Their
+      Applications
+    authors:
+      - family-names: Groth
+        given-names: Jens
+      - family-names: Malvai
+        given-names: Harjasleen
+      - family-names: Miller
+        given-names: Andrew
+      - family-names: Zhang
+        given-names: Yi-Nuo
+    conference:
+      name: Asiacrypt 2025
+    year: 2025
+  - type: article
+    title: >-
+      On the Security of Constraint-Friendly Map-to-Curve Relations
+    authors:
+      - family-names: El Housni
+        given-names: Youssef
+      - family-names: Bünz
+        given-names: Benedikt
+    year: 2026

@@ -1,0 +1,31 @@
+# Go build artifacts
+mapcurve
+mapcurve.exe
+*.out
+*.test
+*.prof
+
+# Go workspace
+go.sum
+vendor/
+
+# LaTeX build artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db

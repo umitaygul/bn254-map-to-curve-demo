@@ -1,0 +1,31 @@
+map-to-curve on BN254: demo of GMMZ x-increment,
+the El Housni-Bunz forgery, and the y-increment countermeasure.
+
+============================================================
+  1) GMMZ x-increment: construct + verify
+============================================================
+  message m = 655322748389458144725984091412
+  H(m).x    = 167762623587701285049851927401475
+  witness   = (k=3, z=5174766403067704783453592313004143960001977510498285483970230844377341303763)
+  verifier accepts ✓
+
+============================================================
+  2) y-increment countermeasure: construct + verify (BN254)
+============================================================
+  message m = 662581444691356880490260522392
+  H(m).y    = 169620849840987361405506693732352
+  witness   = (k=0)
+  verifier accepts ✓
+
+============================================================
+  3) Algebraic attack: BLS signature forgery on x-increment
+============================================================
+  oracle sk = 0xd99ed651...  (truncated)
+  forged m2 = 352978046449503901476620338667868959144276379924024385242
+  forged sig on m2 produced from a single oracle query on m1
+  m2 is distinct from every queried m1 ✓
+  pairing check accepts the forgery ✗ (BLS is broken)
+
+============================================================
+  done
+============================================================
